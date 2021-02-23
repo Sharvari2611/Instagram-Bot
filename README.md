@@ -34,6 +34,7 @@ We write the following code:
     16.         	sleep(5)
 	 
 Lines 1 and 2 import sleep and webdriver.
+
 Line 8 initializes the Chrome driver and sets it to browser.
 
 Line 9 types https://www.instagram.com/ on the address bar and hits Enter.
