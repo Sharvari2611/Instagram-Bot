@@ -19,22 +19,21 @@ We write the following code:
     1. from time import sleep
     2. from selenium import webdriver
     3. class Instabot:
-    4.	  def __init__(self):
-    5.    	self.login('your username','Your password')
-    6.    	self.search_for_mandala('mandalaarts')     
-    7.   def login(self,username,password):
-    8.          self.driver=webdriver.Chrome(executable_path=r"D:\\chromedriver_win32\\chromedriver.exe")
-    9.          self.driver.get("https://www.instagram.com/accounts/emailsignup/")
-    10.         sleep(5)
-    11.         self.driver.find_element_by_xpath("/html/body/div[1]/section/main/div/div/div[2]/p/a").click()
-    12.         sleep(3)
-    13.         self.driver.find_element_by_xpath("/html/body/div[1]/section/main/div/div/div[1]/div/form/div/div[1]/div/label/input").send_keys(username)
-    14.         self.driver.find_element_by_xpath("/html/body/div[1]/section/main/div/div/div[1]/div/form/div/div[2]/div/label/input").send_keys(password)
-    15.         self.driver.find_element_by_xpath("/html/body/div[1]/section/main/div/div/div[1]/div/form/div/div[3]").click()
-    16.         sleep(5)
+    4.		def __init__(self):
+    5.    		self.login('your username','Your password')
+    6.    		self.search_for_mandala('mandalaarts')     
+    7.   	def login(self,username,password):
+    8.          	self.driver=webdriver.Chrome(executable_path=r"D:\\chromedriver_win32\\chromedriver.exe")
+    9.          	self.driver.get("https://www.instagram.com/accounts/emailsignup/")
+    10.         	sleep(5)
+    11.         	self.driver.find_element_by_xpath("/html/body/div[1]/section/main/div/div/div[2]/p/a").click()
+    12.         	sleep(3)
+    13.         	self.driver.find_element_by_xpath("/html/body/div[1]/section/main/div/div/div[1]/div/form/div/div[1]/div/label/input").send_keys(username)
+    14.         	self.driver.find_element_by_xpath("/html/body/div[1]/section/main/div/div/div[1]/div/form/div/div[2]/div/label/input").send_keys(password)
+    15.   		self.driver.find_element_by_xpath("/html/body/div[1]/section/main/div/div/div[1]/div/form/div/div[3]").click()
+    16.         	sleep(5)
 	 
 Lines 1 and 2 import sleep and webdriver.
-
 Line 8 initializes the Chrome driver and sets it to browser.
 
 Line 9 types https://www.instagram.com/ on the address bar and hits Enter.
