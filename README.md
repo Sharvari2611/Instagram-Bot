@@ -2,12 +2,14 @@
 Instagram bot is basically a project which i developed out of curiosity as i wanted to learn the mechanism behind the working of actual bots. All this happens through browser automation.The bot opens instagram logs in with your login credentials  and start doing things we instructed to do. This automation is done using  selenium which is freeware and open source automation tool. Same mechanism has been used here in my bot and it searches for the various mandala pages as the variable passed in the code was mandala pages. It visits the top 5 posts, likes them and comments on the post. This will help in more interaction with various art accounts.
 
 Browser automation works in following way:
-1.You serve it your credentials.
-2.You set the criteria for who to follow, what comments to leave, and which type of posts to like.
-3.Your bot opens a browser, types in https://instagram.com on the address bar, logs in with your credentials, and starts doing the things you instructed it to do.
+
+You serve it your credentials.
+You set the criteria for who to follow, what comments to leave, and which type of posts to like.
+Your bot opens a browser, types in https://instagram.com on the address bar, logs in with your credentials, and starts doing the things you instructed it to do.
 Next, you’ll build the initial version of your Instagram bot, which will automatically log in to your profile.
 
 How to Automate a Browser:
+
 For this version of your Instagram bot, you’ll be using Selenium which is freeware and open source automation tool.
 First, install Selenium. During installation, make sure you also install the chrome webdriver required.The main purpose of the ChromeDriver is to launch Google Chrome. Without that, it is not possible to execute Selenium test scripts in Google Chrome as well as automate any web application. 
 Duplicating code is especially bad  because Selenium code is dependent on UI elements, and UI elements tend to change. When they do change, you want to update your code in one place. That’s where the Page Object Pattern comes in and hence we write the code by using classes. we define a class in which we use seperate function for logging into the account and a different function to make the bot do the respective activities.
