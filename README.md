@@ -34,12 +34,19 @@ We write the following code:
     16.         sleep(5)
 	 
 Lines 1 and 2 import sleep and webdriver.
+
 Line 8 initializes the Chrome driver and sets it to browser.
+
 Line 9 types https://www.instagram.com/ on the address bar and hits Enter.
+
 Line 10 waits for five seconds so you can see the result. Otherwise, it would close the browser instantly.
+
 Line 11 finds the element <a> whose text is equal to Log in and then clicks on the login link. It does this using XPath, but there are a few other methods you could use.
+
 line 12 would wait for 3 seconds so that we see the result.
+
 Line 13 and Line 14 will find the elements <a> whose text is equal to " Enter Username" and "Password" by using the Xpath and then the username and password  provided in Line 5 will be send to the respective tags.
+
 Line 15 will click on the login as directed and then u would be logged in to the account.
   
 In this way we can automate the browser and log in to our accounts and then write the code for the bot to perform the resective actions.
