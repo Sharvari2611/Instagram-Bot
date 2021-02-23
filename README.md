@@ -19,7 +19,7 @@ We write the following code:
     1. from time import sleep
     2. from selenium import webdriver
     3. class Instabot:
-    4.		def __init__(self):
+    4. 		def __init__(self):
     5.    		self.login('your username','Your password')
     6.    		self.search_for_mandala('mandalaarts')     
     7.   	def login(self,username,password):
